@@ -3,7 +3,12 @@
     "description": "PartnerStack partner and affiliate program API integration for Laravel",
     "keywords": [
         "laravel",
-        "laravel-partnerstack"
+        "partnerstack",
+        "partner-program",
+        "affiliate",
+        "referral",
+        "api",
+        "client"
     ],
     "homepage": "https://github.com/jeffersongoncalves/laravel-partnerstack",
     "license": "MIT",
@@ -15,8 +20,9 @@
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^12.0|^13.0"
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "larastan/larastan": "^3.0",
@@ -27,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Jeffersongoncalves\\Partnerstack\\": "src/"
+            "JeffersonGoncalves\\PartnerStack\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Jeffersongoncalves\\Partnerstack\\Tests\\": "tests/"
+            "JeffersonGoncalves\\PartnerStack\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -52,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jeffersongoncalves\\Partnerstack\\PartnerstackServiceProvider"
+                "JeffersonGoncalves\\PartnerStack\\PartnerStackServiceProvider"
             ],
             "aliases": {
-                "Partnerstack": "Jeffersongoncalves\\Partnerstack\\Facades\\Partnerstack"
+                "PartnerStack": "JeffersonGoncalves\\PartnerStack\\Facades\\PartnerStack"
             }
         }
     },
